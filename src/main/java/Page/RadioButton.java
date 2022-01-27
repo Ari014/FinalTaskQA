@@ -31,9 +31,6 @@ public class RadioButton extends BasePage {
         if ( value == "bytes") BYTES_INPUT.click();
         if ( value == "start") START_INPUT.click();
 
-
-
-
     }
 
 
