@@ -9,8 +9,8 @@ Feature: Smoke
     Then User checks that the text of the first  element, which is the first paragraph, contains '<word>'
 
     Examples:
-      | homePage                            | word |
-      | https://www.lipsum.com/            | рыба    |
+| homePage                | word |
+| https://www.lipsum.com/ | рыба |
 
 
 
@@ -19,8 +19,8 @@ Feature: Smoke
     When User clicks Generate Lorem Ipsum button
     Then User checks that the first paragraph starts with '<text>'
     Examples:
-      | homePage                            | text |
-      | https://www.lipsum.com/            | Lorem ipsum dolor sit amet, consectetur adipiscing elit   |
+| homePage                | text                                                    |
+| https://www.lipsum.com/ | Lorem ipsum dolor sit amet, consectetur adipiscing elit |
 
 
 
@@ -31,12 +31,12 @@ Feature: Smoke
     When User clicks Generate Lorem Ipsum button
     Then User checks that the result has '<amountOfWords>' words
     Examples:
-      | homePage                            | amount | amountOfWords |
-      | https://www.lipsum.com/            | 10      | 10            |
-      | https://www.lipsum.com/            | -1      | 5             |
-      | https://www.lipsum.com/            | 0       | 5             |
-      | https://www.lipsum.com/            | 5       | 5             |
-      | https://www.lipsum.com/            | 20      |  20           |
+| homePage                | amount | amountOfWords |
+| https://www.lipsum.com/ | 10     | 10            |
+| https://www.lipsum.com/ | -1     | 5             |
+| https://www.lipsum.com/ | 0      | 5             |
+| https://www.lipsum.com/ | 5      | 5             |
+| https://www.lipsum.com/ | 20     | 20            |
 
 
   Scenario Outline: Check that Lorem Ipsum is generated with correct size of bytes
@@ -46,12 +46,12 @@ Feature: Smoke
     When User clicks Generate Lorem Ipsum button
     Then User checks that the result has '<amount>' bytes
     Examples:
-      | homePage                            | amount |
-      | https://www.lipsum.com/            | 10      |
-      | https://www.lipsum.com/            | 77     |
-      | https://www.lipsum.com/            | 100       |
-      | https://www.lipsum.com/            | 5       |
-      | https://www.lipsum.com/            | 20      |
+| homePage                | amount |
+| https://www.lipsum.com/ | 10     |
+| https://www.lipsum.com/ | 77     |
+| https://www.lipsum.com/ | 100    |
+| https://www.lipsum.com/ | 5      |
+| https://www.lipsum.com/ | 20     |
 
 
   Scenario Outline: Check the checkbox
@@ -60,8 +60,8 @@ Feature: Smoke
     When User clicks Generate Lorem Ipsum button
     Then User checks that result no longer starts with '<text>'
     Examples:
-      | homePage                           |text |
-      | https://www.lipsum.com/            |Lorem ipsum |
+| homePage                | text        |
+| https://www.lipsum.com/ | Lorem ipsum |
 
 
 
@@ -71,7 +71,7 @@ Feature: Smoke
     When User clicks Generate Lorem Ipsum button
     Then User checks that result from each paragraph and determine the number of paragraphs containing the '<word>'
     Examples:
-      | homePage                           |word|
-      | https://www.lipsum.com/            |lorem|
+| homePage                | word  |
+| https://www.lipsum.com/ | lorem |
 
 
