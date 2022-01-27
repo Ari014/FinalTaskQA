@@ -129,7 +129,6 @@ public class DefinitionSteps {
         }
        generatePage.waitForPageLoadComplete(DEFAULT_TIMEOUT);
         Assert.assertTrue(k > 2);
-
     }
 }
 
